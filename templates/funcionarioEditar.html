@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Aluno</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<link href = "static/bootstrap.css" rel = "stylesheet">
+
+<body>
+    <div class="alfa">
+    <h1>Editar funcionario</h1>
+
+    <form action="{{ url_for('rFuncionarioC.apiEditarFuncionario') }}" method='POST'>
+        <div class="form-group">
+            <label>CPF</label><input type="text" name="cpf"><br>
+            <label>NOME</label><input type="String" name="nome"><br>
+            <label>LOGIN</label><input type="String" name="login"><br>
+            <label>SENHA</label><input type="String" name="senha"><br>
+            <input class="btn btn-primary" type="submit" value="Editar">
+        </div>
+    </form>
+    
+    <button onclick="window.location.href='/telaCadastroFuncionarios'">Voltar</button>
+</div>
+</body>
+
+</html>

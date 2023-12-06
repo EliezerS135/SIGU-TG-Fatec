@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Funcionario</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <style>button{
+        width: 200px;
+        margin-top: 10px;
+        border-radius: 3px;
+        height: 50px;
+    }</style>
+
+</head>
+
+<body>
+    <div class="alfa">
+    <h1> Portal Secretaria Acadêmica </h1>
+    <button onclick="window.location.href='/telaCadastroAlunos'">Cadastro de alunos</button> <br>
+    <button onclick="window.location.href='/telaCadastroFuncionarios'">Cadastro de funcionarios</button> <br>
+    <button onclick="window.location.href='/telaCadastroDis'">Cadastro de disciplinas</button> <br>
+    <button onclick="window.location.href='/telaCadastroNotas'">Cadastro de notas</button> <br>
+    <button onclick="window.location.href='/'">Página principal </button>
+</div>
+</body>
+</html>

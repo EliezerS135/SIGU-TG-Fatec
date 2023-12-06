@@ -1,0 +1,36 @@
+.home{
+    background-color: rgb(44, 43, 43);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 15px;
+    color: aliceblue;
+    text-align: center;
+}
+.home button {
+    width: 150px;
+    height: 30px;
+}
+        
+.alfa{
+    background-color: rgb(44, 43, 43);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    color: aliceblue;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(45deg, white, purple);
+}

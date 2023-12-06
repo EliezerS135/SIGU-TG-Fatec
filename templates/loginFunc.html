@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Funcionario</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <div class="alfa">
+    <h1>Login Funcionario</h1>    
+    <form action="{{ url_for('rFuncionarioC.ApiLoginFunc') }}" method="POST">
+        <input placeholder="login" type="text" id="username" name="username" required><br><br>
+        <input placeholder="senha" type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Login">
+        <button onclick="window.location.href='/'">Voltar</button>
+
+    </form>
+</div>
+    
+    {% if resposta %}
+    <script>
+        alert("{{ resposta }}");
+    </script>
+    {% endif %}
+</body>
+</html>
